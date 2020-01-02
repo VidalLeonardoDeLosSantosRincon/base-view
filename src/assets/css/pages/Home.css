@@ -1,0 +1,12 @@
+.ctr-home{
+    background: transparent;
+    /*padding:10px 25px;*/
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;;
+}
+
+.ctr-home img{
+    height: 100%;
+    width:100%;
+}

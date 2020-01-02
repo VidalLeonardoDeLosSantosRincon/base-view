@@ -1,0 +1,15 @@
+.ctr-loading{
+    background:transparent;
+    padding:5px;
+    box-sizing: border-box;
+    height: 100%;
+    width:100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ctr-loading img{
+    height:190px;
+    width:300px;
+}

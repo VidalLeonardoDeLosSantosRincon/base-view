@@ -1,0 +1,109 @@
+#ctr-post-form{
+    padding:5px;
+    background:white;
+    box-sizing: border-box;
+    box-shadow: 1px 2px 2px rgba(0,0,0,0.1);
+    width:90%;
+    border:0.5px solid rgba(0,0,0,0.05);
+    margin:0 0 10px 0;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ctr-post-form #post-form{
+    background: white;
+    padding:10px 6px;
+    width:100%;
+    box-sizing: border-box;
+    border-radius:3px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#ctr-post-form #post-form #text-label{
+    align-self: flex-start;
+    color:gray;
+    font-size:12px;
+}
+
+#ctr-post-form #post-form #text{
+    width: 100%;
+    border-radius: 3px;
+    border:0.5px solid rgba(0,0,0,0.05);
+    background: rgba(0,0,0,0.01);
+    resize:none;
+    color:gray;
+    overflow:hidden;
+    outline:none;
+    margin:2px 0 5px 0;
+   
+    padding:5px;
+    box-sizing: border-box;
+}
+
+#ctr-post-form #post-form #image-option-box {
+    background: white;
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#ctr-post-form #post-form #image-option-box #image-label {
+    background: rgba(0,0,0,0.05);
+    border-radius: 3px;
+    border:0.5px solid rgba(0,0,0,0.05);
+    width:92%;
+    padding:2px;
+    box-sizing: border-box;
+    cursor:pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#ctr-post-form #post-form #image-option-box #image-label #image-icon{
+    height:20px;
+}
+
+#ctr-post-form #post-form #image-option-box #image{
+    display: none;
+}
+
+#ctr-post-form #post-form #image-option-box #clear-image-icon{
+    height: 25px;
+    cursor: pointer;
+}
+
+#ctr-post-form #post-form #btn-save {
+    background: rebeccapurple;
+    color:white;
+    border:none;
+    margin:5px 0 0 0;
+    width:100%;
+    padding:5px;
+    border-radius:3px;
+    box-sizing: border-box;
+    cursor:pointer;
+    outline: none;
+}
+#ctr-post-form #post-form #btn-cancel {
+    background: white;
+    color:dodgerblue;
+    border:none;
+    font-size: 12px;
+    margin:5px 0 0 0;
+    width:100%;
+    padding:5px;
+    border-radius:3px;
+    box-sizing: border-box;
+    cursor:pointer;
+    outline: none;
+}
