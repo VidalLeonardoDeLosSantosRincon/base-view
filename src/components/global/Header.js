@@ -6,9 +6,8 @@ import "../../assets/css/global/Header.css";
 
 const Header = () =>{
 
-    const [isLogged,setLogged] = useState(false);
+    const [isLogged,setLogged] = useState(true);
     const [intervalId,setIntervalId] = useState(null);
-
 
     useEffect(()=>{
         let inVal = setInterval(()=>{
@@ -21,6 +20,7 @@ const Header = () =>{
             }
         },100);
     },[])
+
 
     if(isLogged){
         return(
@@ -36,26 +36,25 @@ const Header = () =>{
                         <li className="menu-item" style={{cursor:"pointer"}} onClick={()=>{
                             localStorage.setItem("isLogged",false);
                             clearInterval(intervalId);
+                            setLogged(false);
                         }}>logout</li>
                     </ul>
                    
                 </header>
             </Fragment>
         );
-    }else{  
-        return(
-            <Fragment>
-                <header className="header">
-                    <ul id="menu">
-                        <Link to="/"><li className="menu-item">Home</li></Link>
-                        <Link to="/signup"><li className="menu-item">Signup</li></Link>
-                        <Link to="/login"><li className="menu-item">Login</li></Link>
-                    </ul>
-                </header>
-            </Fragment>
-        );
     }
-    
+    return( 
+        <Fragment>
+            <header className="header">
+                <ul id="menu">
+                    <Link to="/"><li className="menu-item">Home</li></Link>
+                    <Link to="/signup"><li className="menu-item">Signup</li></Link>
+                    <Link to="/login"><li className="menu-item">Login</li></Link>
+                </ul>
+            </header>
+        </Fragment>
+    );  
 };
 
 export default Header;
