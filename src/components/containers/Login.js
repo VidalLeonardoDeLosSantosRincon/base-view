@@ -70,7 +70,7 @@ const Login = ()=>{
     }else{
         if(logged){
             localStorage.setItem("isLogged",logged);
-            return <Redirect to="/posts"/>;
+            return <Redirect to="/base-view/posts"/>;
         }
         localStorage.setItem("isLogged",false);
         return <LoginView form={loginForm} onChange={handleOnChange} onClick={handleOnClick}/>;

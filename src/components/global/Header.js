@@ -28,9 +28,9 @@ const Header = () =>{
                 <header className="header">
                 <h5 id="user-name">{localStorage.getItem("userEmail")}</h5>
                     <ul id="menu">
-                        <Link to="/"><li className="menu-item">Home</li></Link>
-                        <Link to="/posts"><li className="menu-item">Posts</li></Link>
-                        <Link to="/myposts"><li className="menu-item">My posts</li></Link>
+                        <Link to="/base-view/"><li className="menu-item">Home</li></Link>
+                        <Link to="/base-view/posts"><li className="menu-item">Posts</li></Link>
+                        <Link to="/base-view/myposts"><li className="menu-item">My posts</li></Link>
                         <li className="menu-item" style={{cursor:"pointer"}} onClick={()=>{
                             let isLogout = window.confirm("Log out?");
                             if(isLogout){
@@ -49,9 +49,9 @@ const Header = () =>{
         <Fragment>
             <header className="header">
                 <ul id="menu">
-                    <Link to="/"><li className="menu-item">Home</li></Link>
-                    <Link to="/signup"><li className="menu-item">Signup</li></Link>
-                    <Link to="/login"><li className="menu-item">Login</li></Link>
+                    <Link to="/base-view/"><li className="menu-item">Home</li></Link>
+                    <Link to="/base-view/signup"><li className="menu-item">Signup</li></Link>
+                    <Link to="/base-view/login"><li className="menu-item">Login</li></Link>
                 </ul>
             </header>
         </Fragment>

@@ -86,7 +86,7 @@ class MyPosts extends Component{
             return <Loading/>
         }else{
             if(isLogged === false){
-                return <Redirect to="/login"/>;
+                return <Redirect to="/base-view/login"/>;
             }else{
                 return(
                     <Fragment>

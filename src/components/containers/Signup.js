@@ -73,7 +73,7 @@ const Signup = (props) =>{
         return <Loading/>;
     }else{
         if(signed){
-            return <Redirect to="/login"/>;
+            return <Redirect to="/base-view/login"/>;
         }
         return <SignupView form={signupForm} onChange={handleOnChange} onClick={handleOnClick}/>;
     }

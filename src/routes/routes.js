@@ -18,11 +18,11 @@ const AppRoutes = ()=>(
     <Router>
         <App>
             <Switch>
-                <Route exact path="/" component={Home}/>
-                <Route exact path="/login" component={Login}/>
-                <Route exact path="/signup" component={Signup}/> 
-                <Route exact path="/posts" component={Posts}/>
-                <Route exact path="/myposts" component={MyPosts}/>  
+                <Route exact path="/base-view/" component={Home}/>
+                <Route exact path="/base-view/login" component={Login}/>
+                <Route exact path="/base-view/signup" component={Signup}/> 
+                <Route exact path="/base-view/posts" component={Posts}/>
+                <Route exact path="/base-view/myposts" component={MyPosts}/>  
                 <Route component={PageNotFound}/>
             </Switch>
         </App>

@@ -1,8 +1,8 @@
 #ctr-post{
-    height: auto;
+    height: 200px;
     width: 90%;
     background: white;
-    padding:15px 20px;
+    padding:10px 15px;
     box-sizing: border-box;
     box-shadow: 1px 2px 5px rgba(0,0,0,0.1);
     margin:5px;
@@ -71,7 +71,7 @@
 @media (max-width: 1050px) {
 
     #ctr-post{
-        height: auto;
+        height: 200px;
         width: 90%;
         background: white;
         padding:15px 20px;
@@ -148,7 +148,7 @@
 @media (max-width: 650px) {
 
     #ctr-post{
-        height: auto;
+        height: 200px;
         width: 90%;
         background: white;
         padding:15px 20px;
@@ -225,7 +225,7 @@
 @media (max-width: 570px) {
 
     #ctr-post{
-        height: auto;
+        height: 200px;
         width: 90%;
         background: white;
         padding:15px 20px;
