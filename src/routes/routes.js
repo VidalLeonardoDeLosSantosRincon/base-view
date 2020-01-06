@@ -11,6 +11,7 @@ import Login from "../components/containers/Login";
 import Signup from "../components/containers/Signup";
 import Home from "../pages/Home";
 import Posts from "../pages/Posts";
+import MyPosts from "../pages/MyPosts";
 import PageNotFound from "../pages/PageNotFound";
 
 const AppRoutes = ()=>(
@@ -20,7 +21,8 @@ const AppRoutes = ()=>(
                 <Route exact path="/" component={Home}/>
                 <Route exact path="/login" component={Login}/>
                 <Route exact path="/signup" component={Signup}/> 
-                <Route exact path="/posts" component={Posts}/> 
+                <Route exact path="/posts" component={Posts}/>
+                <Route exact path="/myposts" component={MyPosts}/>  
                 <Route component={PageNotFound}/>
             </Switch>
         </App>

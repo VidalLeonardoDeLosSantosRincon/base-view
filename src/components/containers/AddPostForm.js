@@ -20,8 +20,9 @@ const AddPostForm = ()=>{
     }
 
     const handleAddPost = () =>{
-        const {text,image} = form;
-
+        //const {text,image} = form;
+        const {text} = form;
+        
         let fecha = new Date();
         let dia = fecha.getDate();
             dia = dia<10? `0${dia}`:dia;
@@ -46,6 +47,7 @@ const AddPostForm = ()=>{
                     alert(msgs);
                 }else{
                     alert(res);
+                    localStorage.setItem("newPosted",true);
                 }
             }
 

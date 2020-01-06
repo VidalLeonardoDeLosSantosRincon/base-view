@@ -2,7 +2,7 @@
     height: auto;
     width: 90%;
     background: white;
-    padding:15px 25px;
+    padding:15px 20px;
     box-sizing: border-box;
     box-shadow: 1px 2px 5px rgba(0,0,0,0.1);
     margin:5px;
@@ -32,6 +32,16 @@
 
 }
 
+#ctr-post #btn-delete{
+    border-radius: 100px;
+    border:none;
+    padding: 2px 6px;
+    color:gray;
+    cursor:pointer;
+    align-self: flex-end;
+
+}
+
 #ctr-post #name{
     font-weight: 300;
     color:dodgerblue;
@@ -55,4 +65,239 @@
     -moz-hyphens: auto;
     -ms-hyphens: auto;
      hyphens: auto;
+}
+
+
+@media (max-width: 1050px) {
+
+    #ctr-post{
+        height: auto;
+        width: 90%;
+        background: white;
+        padding:15px 20px;
+        box-sizing: border-box;
+        box-shadow: 1px 2px 5px rgba(0,0,0,0.1);
+        margin:5px;
+        border-radius: 2px;
+    
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    
+    #ctr-post:hover{
+        box-shadow: 1px 5px 5px rgba(0,0,0,0.1);
+    
+        transform: scale(1.02);
+        -webkit-transform: scale(1.02);
+        -ms-transform: scale(1.02);
+        -moz-transform: scale(1.02);
+        -o-transform: scale(1.02);
+    
+        transition:all 0.1s ease-in;
+        -webkit-transition:all 0.1s ease-in;
+        -ms-transition:all 0.1s ease-in;
+        -moz-transition:all 0.1s ease-in;
+        -o-transition:all 0.1s ease-in;
+    
+    }
+    
+    #ctr-post #btn-delete{
+        border-radius: 100px;
+        border:none;
+        padding:2px 6px;
+        color:gray;
+        cursor:pointer;
+        align-self: flex-end;
+    
+    }
+    
+    #ctr-post #name{
+        font-weight: 300;
+        font-size:12px;
+        color:dodgerblue;
+    }
+    
+    #ctr-post #date{
+        font-size:10px;
+        font-weight: 300;
+        color:lightgreen;
+    }
+    
+    #ctr-post #text{
+        font-weight: 300;
+        font-size:18px;
+        color:gray;
+        margin:0 10px 0 10px;
+        
+    
+        -ms-word-break: break-all;
+        word-break: break-all;
+        -webkit-hyphens: auto;
+        -moz-hyphens: auto;
+        -ms-hyphens: auto;
+         hyphens: auto;
+    }
+
+}
+
+ 
+
+@media (max-width: 650px) {
+
+    #ctr-post{
+        height: auto;
+        width: 90%;
+        background: white;
+        padding:15px 20px;
+        box-sizing: border-box;
+        box-shadow: 1px 2px 5px rgba(0,0,0,0.1);
+        margin:5px;
+        border-radius: 2px;
+    
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    
+    #ctr-post:hover{
+        box-shadow: 1px 5px 5px rgba(0,0,0,0.1);
+    
+        transform: scale(1.02);
+        -webkit-transform: scale(1.02);
+        -ms-transform: scale(1.02);
+        -moz-transform: scale(1.02);
+        -o-transform: scale(1.02);
+    
+        transition:all 0.1s ease-in;
+        -webkit-transition:all 0.1s ease-in;
+        -ms-transition:all 0.1s ease-in;
+        -moz-transition:all 0.1s ease-in;
+        -o-transition:all 0.1s ease-in;
+    
+    }
+    
+    #ctr-post #btn-delete{
+        border-radius: 100px;
+        border:none;
+        padding: 2px 6px;
+        color:gray;
+        cursor:pointer;
+        align-self: flex-end;
+    
+    }
+    
+    #ctr-post #name{
+        font-weight: 300;
+        font-size:12px;
+        color:dodgerblue;
+    }
+    
+    #ctr-post #date{
+        font-size:10px;
+        font-weight: 300;
+        color:lightgreen;
+    }
+    
+    #ctr-post #text{
+        font-weight: 300;
+        font-size:18px;
+        color:gray;
+        margin:0 10px 0 10px;
+        
+    
+        -ms-word-break: break-all;
+        word-break: break-all;
+        -webkit-hyphens: auto;
+        -moz-hyphens: auto;
+        -ms-hyphens: auto;
+         hyphens: auto;
+    }
+    
+}
+
+
+
+@media (max-width: 570px) {
+
+    #ctr-post{
+        height: auto;
+        width: 90%;
+        background: white;
+        padding:15px 20px;
+        box-sizing: border-box;
+        box-shadow: 1px 2px 5px rgba(0,0,0,0.1);
+        margin:5px;
+        border-radius: 2px;
+    
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    
+    #ctr-post:hover{
+        box-shadow: 1px 5px 5px rgba(0,0,0,0.1);
+    
+        transform: scale(1.02);
+        -webkit-transform: scale(1.02);
+        -ms-transform: scale(1.02);
+        -moz-transform: scale(1.02);
+        -o-transform: scale(1.02);
+    
+        transition:all 0.1s ease-in;
+        -webkit-transition:all 0.1s ease-in;
+        -ms-transition:all 0.1s ease-in;
+        -moz-transition:all 0.1s ease-in;
+        -o-transition:all 0.1s ease-in;
+    
+    }
+    
+    #ctr-post #btn-delete{
+        border-radius: 100px;
+        border:none;
+        font-size:10px;
+        padding: 1px 4px;
+        color:gray;
+        cursor:pointer;
+        align-self: flex-end;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    
+    }
+    
+    #ctr-post #name{
+        font-weight: 300;
+        font-size:12px;
+        color:dodgerblue;
+    }
+    
+    #ctr-post #date{
+        font-size:10px;
+        font-weight: 300;
+        color:lightgreen;
+    }
+    
+    #ctr-post #text{
+        font-weight: 300;
+        font-size:18px;
+        color:gray;
+        margin:0 10px 0 10px;
+        
+    
+        -ms-word-break: break-all;
+        word-break: break-all;
+        -webkit-hyphens: auto;
+        -moz-hyphens: auto;
+        -ms-hyphens: auto;
+         hyphens: auto;
+    }
+    
 }

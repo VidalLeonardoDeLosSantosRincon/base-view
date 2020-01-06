@@ -19,23 +19,26 @@ class Posts extends Component{
             posts:[]
         }
 
-        this.handleGetPost = this.handleGetPost.bind(this);
+        this.handleGetPosts = this.handleGetPosts.bind(this);
     }
 
-    handleGetPost(){
+    handleGetPosts(){
         this.setState({
             loading:true
         })
         let xhr = new XMLHttpRequest();
         xhr.onreadystatechange = ()=>{
             if(xhr.status===200 && xhr.readyState===4){
-                let res = JSON.parse(xhr.responseText);
-                this.setState({
-                    posts:res,
-                    loading:false
-                })
+               let res = JSON.parse(xhr.responseText);
+               //let res = xhr.responseText;
+              
+                if(Array.isArray(res)){
+                    this.setState({
+                        posts:res,
+                        loading:false
+                    })
+                }  
             }
-
         };
 
         xhr.open("GET","https://pratices.000webhostapp.com/post2.php",true);
@@ -43,10 +46,16 @@ class Posts extends Component{
     }
 
     componentDidMount(){
-     
-      this.handleGetPost();
+      //console.log(window.location.pathname);
+      this.handleGetPosts();
            
       this.myInterval = setInterval(()=>{
+
+        if(localStorage.getItem("newPosted")==="true"){
+            this.handleGetPosts();
+            localStorage.setItem("newPosted",false);
+        }
+
         if(localStorage.getItem("isLogged")==="true"){
             this.setState({
                 isLogged:true   

@@ -1,13 +1,13 @@
 import React,{Fragment} from "react";
 
-import PostView from "../presentational/PostView";
+import Post from "../containers/Post";
 
 const PostList = ({posts})=>{
     return(
         <Fragment>
             {
                 posts.map((post,index)=>{
-                   return <PostView key={`post_${index}`} post={post}/>;
+                   return <Post key={`post_${index}`} post={post}/>;
                 })
             }
         </Fragment>

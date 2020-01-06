@@ -12,11 +12,16 @@
     justify-content: flex-end;
     align-items: center;
 }
+.header #user-name{
+    font-weight:300;
+    color:dodgerblue;
+    margin:0 5px 0 0;
+}
 
 .header #menu{
     list-style: none;
     background:transparent;
-    width:150px;
+    width:auto;
     padding:5px;
     box-sizing: border-box;
 
@@ -42,3 +47,113 @@
     -ms-transition: all 0.5s linear;
     -o-transition: all 0.5s linear;
 }
+
+
+@media (max-width: 1050px) {
+
+    .header{
+        height: 50px;
+        width:100%;
+        background:white;
+        color:gray;
+        padding:0 25px;
+        box-sizing: border-box;
+        box-shadow: 1px 2px 5px rgba(0,0,0,0.08);
+        margin: 0 0 2px 0;
+    
+        display:flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    .header #user-name{
+        font-weight:300;
+        color:dodgerblue;
+        margin:0 5px 0 0;
+        font-size:10px;
+    }
+    
+    .header #menu{
+        list-style: none;
+        background:transparent;
+        width:auto;
+        padding:5px;
+        box-sizing: border-box;
+    
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .header #menu .menu-item{
+        display:inline-block;
+        color:gray;
+        padding:5px 5px;
+        font-size:10px;
+        box-sizing: border-box;
+        border-bottom:2px solid transparent;
+    }
+    
+    .header #menu .menu-item:hover{
+        border-bottom:2px solid rebeccapurple;
+    
+        transition: all 0.5s linear;
+        -webkit-transition: all 0.5s linear;
+        -moz-transition: all 0.5s linear;
+        -ms-transition: all 0.5s linear;
+        -o-transition: all 0.5s linear;
+    }
+    
+
+}
+
+
+@media (max-width: 680px) {
+
+    .header{
+        height: 50px;
+        width:100%;
+        background:white;
+        color:gray;
+        padding:0 25px;
+        box-sizing: border-box;
+        box-shadow: 1px 2px 5px rgba(0,0,0,0.08);
+        margin: 0 0 2px 0;
+    
+        display:flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+    
+    .header #menu{
+        list-style: none;
+        background:transparent;
+        width:auto;
+        padding:5px;
+        box-sizing: border-box;
+    
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .header #menu .menu-item{
+        display:inline-block;
+        color:gray;
+        padding:5px 5px;
+        font-size:9px;
+        box-sizing: border-box;
+        border-bottom:2px solid transparent;
+    }
+    
+    .header #menu .menu-item:hover{
+        border-bottom:2px solid rebeccapurple;
+    
+        transition: all 0.5s linear;
+        -webkit-transition: all 0.5s linear;
+        -moz-transition: all 0.5s linear;
+        -ms-transition: all 0.5s linear;
+        -o-transition: all 0.5s linear;
+    }
+    
+ }

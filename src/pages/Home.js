@@ -4,7 +4,7 @@ import React,{Component,Fragment} from "react";
 import "../assets/css/pages/Home.css";
 
 //components
-import bgImage from "../assets/images/home-bg2.jpg"; 
+//import bgImage from "../assets/images/home-bg2.jpg"; 
 import Loading from "../components/global/Loading";
 
 class Home extends Component{
@@ -28,7 +28,6 @@ class Home extends Component{
             return(
                 <Fragment>
                     <div className="ctr-home">
-                    {/*<img src={bgImage} alt="background-img"/>*/}
                         <div id="banner">
                             <h6>Hello World!</h6>
                         </div>

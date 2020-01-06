@@ -26,17 +26,18 @@ const Header = () =>{
         return(
             <Fragment>
                 <header className="header">
-                <h5 style={{
-                    fontWeight:"300",
-                    color:"dodgerblue",
-                    margin:"0 25px 0 0"}}>{localStorage.getItem("userEmail")}</h5>
+                <h5 id="user-name">{localStorage.getItem("userEmail")}</h5>
                     <ul id="menu">
                         <Link to="/"><li className="menu-item">Home</li></Link>
                         <Link to="/posts"><li className="menu-item">Posts</li></Link>
+                        <Link to="/myposts"><li className="menu-item">My posts</li></Link>
                         <li className="menu-item" style={{cursor:"pointer"}} onClick={()=>{
-                            localStorage.setItem("isLogged",false);
-                            clearInterval(intervalId);
-                            setLogged(false);
+                            let isLogout = window.confirm("Log out?");
+                            if(isLogout){
+                                localStorage.setItem("isLogged",false);
+                                clearInterval(intervalId);
+                                setLogged(false);
+                            }       
                         }}>logout</li>
                     </ul>
                    

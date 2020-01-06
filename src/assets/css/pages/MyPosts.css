@@ -1,4 +1,4 @@
-.ctr-posts{
+#ctr-myposts{
     background: linear-gradient(45deg,rgba(0,0,0,0.01),white);
     height:100%;
     width:50%;
@@ -12,10 +12,8 @@
     align-items: center;
 }
 
-
 @media (max-width: 1050px) {
-
-    .ctr-posts{
+    #ctr-myposts{
         background: linear-gradient(45deg,rgba(0,0,0,0.01),white);
         height:100%;
         width:70%;
@@ -29,13 +27,10 @@
         align-items: center;
     }
 
- }
-
- 
+}
 
 @media (max-width: 650px) {
-
-    .ctr-posts{
+    #ctr-myposts{
         background: linear-gradient(45deg,rgba(0,0,0,0.01),white);
         height:100%;
         width:100%;
@@ -48,5 +43,4 @@
         justify-content: flex-start;
         align-items: center;
     }
-
  }
